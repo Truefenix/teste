@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Group Counter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Number Group Counter</h1>
+        
+        <div class="input-section">
+            <label for="numbersInput">how to put the number:</label>
+            <div class="example">[1,2,3,4] - (With commas and no spaces between numbers)</div>
+            <input type="text" id="numbersInput" placeholder="e.g., 3, 29, 10, 14">
+            <button onclick="processNumbers()">Submit</button>
+        </div>
+
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <th>Group</th>
+                    <th>Numbers</th>
+                    <th>Count</th>
+                </tr>
+            </thead>
+            <tbody id="groupTable">
+                <!-- Table rows will be inserted here -->
+            </tbody>
+        </table>
+
+        <div id="result">
+            <!-- Result will be displayed here -->
+        </div>
+
+        <div class="text-geral">
+            <h2 style="color: rgb(156, 219, 104);">System Functionality Overview</h2>
+            <p>This system is designed to allow users to input a series of numbers, referred to as "passed numbers," and then categorize and analyze these numbers based on predefined groups. The system performs the following key functions:</p>
+            
+            <ul>
+                <li><strong>Number Input:</strong> Users can enter a list of passed numbers into a text input field. These numbers should be separated by commas.</li>
+                <li><strong>Group Display:</strong> The system displays a table with predefined groups (Group A, Group B, etc.). Each group contains a specific set of numbers.</li>
+                <li><strong>Number Count:</strong> Once the user submits the passed numbers, the system counts how many of these numbers appear in each group.</li>
+                <li><strong>Visual Feedback:</strong> The table updates to show the count of passed numbers within each group. This allows the user to quickly see which groups contain the most or the fewest passed numbers.</li>
+                <li><strong>Result Display:</strong> The system identifies and displays which group has the fewest passed numbers, providing clear and immediate feedback to the user.</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
